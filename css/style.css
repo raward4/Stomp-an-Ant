@@ -10,19 +10,6 @@ html {
      but can be over-ridden as needed */
   box-sizing: inherit;
 }
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-/* Use a system font, if none are available use an available sans-sarif   font */
-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-margin: 0;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
 section {
   align-self: center;
 }
@@ -56,15 +43,25 @@ body {
   margin: 0 20% 0 20%;
   text-align: center;
   justify-content:center;
-}
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  /* Use a system font, if none are available use an available sans-sarif   font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
 h1 {
-  width;
+  border-style: dotted;
   font-family:'Courier New', Courier, monospace;
   background-color: #DEB887;
   color: #002F00;
 }
 button { 
-  background-color: #DEB887;
   text-transform: uppercase;
   border: solid;
   border-style:dotted;
@@ -77,28 +74,8 @@ button {
   margin-inline: 43%;
   text-align: center;
 }
-
-@-webkit-keyframes borderBlink {    
-  from, to {    
-      border-color: transparent    
-  }    
-  50% {    
-      border-color: #002F00;
-  }    
-}    
-@keyframes borderBlink {    
-  from, to {    
-      border-color: transparent    
-  }    
-  50% {    
-      border-color: #002F00;   
-  }    
-}    
-.borderBlink{    
-  border:4px dotted #002F00;
-  /* add 'border-color: transparent' if you wish no border to show initially */  
-}
-.borderBlink:hover {    
-  -webkit-animation: borderBlink 1s step-end infinite;    
-  animation: borderBlink 1s step-end infinite;    
+button {
+  justify-items: auto;
+h4 {
+  display: grid;
 }

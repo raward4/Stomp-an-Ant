@@ -7,19 +7,32 @@
 
 
 /*------------------------ Cached Element References ------------------------*/
+console.log('hi')
 
-/*
-replay button
-playing Board
-message/game status
-
-
+const playAgainButton = document.querySelector('#playAgainButton')
+/*playing Board
+message/game status*/
+const sq0 = document.querySelector('#sq0')
+const sq1 = document.querySelector('#sq1')
+const sq2 = document.querySelector('#sq2')
+const sq3 = document.querySelector('#sq3')
+const sq4 = document.querySelector('#sq4')
+const sq5 = document.querySelector('#sq5')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+playAgainButton.addEventListener("click", () => {
+	console.log("this button has been pressed"
+)}
+)
+sq0.addEventListener("click", () => {
+	return 
+})
 
 /*-------------------------------- Functions --------------------------------*/
+
+
+
 
 
 /*1) Define the required variables used to track the state of the game:
@@ -37,6 +50,19 @@ message/game status
 
 6) Handle a player clicking the replay button */
 // 1) Define the required variables used to track the state of the game:
+
+/*- **Render a game in the browser**. You may not use Canvas.
+- **Include win/loss logic and render win/loss messages in HTML.**
+- Include separate HTML, CSS & JavaScript files.
+- Have **properly indented HTML, CSS & JavaScript**. Additionally, vertical whitespace needs to be consistent.
+- Display a favicon.
+- Use CSS Flexbox or Grid (or grid functionality as provided by a CSS Framework).
+- The game looks and feels similar to apps we use on a daily basis - it has a consistent and polished user interface and offers a positive user experience.
+- No remaining **dead or commented out code**.
+- Have functions and variables that are named sensibly.
+- **Display that you are making consistent code choices**. For example, choose between your preference for function declarations vs. function expressions.
+- **Be deployed online** so that the rest of the world can play your game!
+- Include functionality specific to your game as specified in the Recommended Games section below, or as discussed with your instructor if building a game not on the Recommended Games list.*/
   // None of these variables will need to hold a value when they are defined
 
 	// 1.1) Use an array to represent the squares on the board.    
