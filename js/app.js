@@ -1,17 +1,15 @@
 /*-------------------------------- Constants --------------------------------*/
 
-
-
+const scores = []
 /*---------------------------- Variables (state) ----------------------------*/
 
 
-
 /*------------------------ Cached Element References ------------------------*/
-console.log('hi')
 
 const playAgainButton = document.querySelector('#playAgainButton')
 /*playing Board
 message/game status*/
+
 const sq0 = document.querySelector('#sq0')
 const sq1 = document.querySelector('#sq1')
 const sq2 = document.querySelector('#sq2')
@@ -19,20 +17,78 @@ const sq3 = document.querySelector('#sq3')
 const sq4 = document.querySelector('#sq4')
 const sq5 = document.querySelector('#sq5')
 
+const scoreContainer= document.querySelector('#score')
 /*----------------------------- Event Listeners -----------------------------*/
 
 playAgainButton.addEventListener("click", () => {
-	console.log("this button has been pressed"
-)}
-)
-sq0.addEventListener("click", () => {
-	return 
+	console.log("pressed")
 })
+
+
 
 /*-------------------------------- Functions --------------------------------*/
 
 
 
+
+sq0.addEventListener("click", addPoint0)
+sq1.addEventListener("click", addPoint0)
+sq2.addEventListener("click", addPoint0)
+sq3.addEventListener("click", addPoint0)
+sq4.addEventListener("click", addPoint0)
+sq5.addEventListener("click", addPoint0)
+
+
+function addPoint0(evt) {
+	const isSquare = evt.target.id === "sq0"
+	const newScore = {
+		text: isSquare ? 'point scored' : 'no point scored'
+	}
+	scores.push(newScore)
+	render()
+}
+
+
+function render() {
+	scoreContainer.innerHTML = ""
+  // quotes is an array of quote objects
+  scores.forEach((point, idx) => {
+    // quote is an object with the shape of:
+    // { artist: "artist name", text: "quote" }
+    appendScore(point, idx)
+  }) 
+}
+
+
+function appendScore(point, idx) {
+	let scoreCard = document.createElement("div")
+	scoreCard.innerHTML = 
+	`<div class="card-body">
+	<blockquote class="blockquote mb-0">
+		<p>${point}</p>
+		<footer class="blockquote-footer text-end artist-name">
+			${point}
+		</footer>
+	</blockquote>
+	</div>`
+	scoreContainer.appendChild(scoreCard)
+}
+
+/*const scoreBoard = document.createElement("newScore");
+newScore = function(score) {
+	return score + 1
+}
+scoreBoard.appendChild([newScore]);
+
+addPoint = function(evt) {
+	//is either true or false
+	if (evt.target.id === "sq1") {
+	score.push('point')}
+	else {
+		score.push('no point')
+	}
+	console.log(score);
+	}*/
 
 
 /*1) Define the required variables used to track the state of the game:
@@ -172,4 +228,4 @@ sq0.addEventListener("click", () => {
 
 	// 6.2) Store the new replay button element
 
-	// 6.3) Do steps 4.1 (initialize the state variables) and 4.2 (render).
+	// 6.3) Do steps 4.1 (initialize the state variables) and 4.2 (render)
