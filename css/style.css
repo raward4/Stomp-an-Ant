@@ -55,6 +55,8 @@ body {
   flex-direction: column;
   justify-content: center;
   }
+
+  
 h1 {
   border-style: dotted;
   font-family:'Courier New', Courier, monospace;
@@ -78,4 +80,17 @@ button {
   justify-items: auto;
 h4 {
   display: grid;
+}
+
+
+
+#light-dark-button {
+  background-color: var(--light-dark-btn-bg);
+  background-image: var(--light-dark-btn-bg);
+}
+
+#light-dark-button::after {
+  border: none;
+  color: var(--inverted-btn-text-color);
+  content: var(--light-dark-btn-content);
 }

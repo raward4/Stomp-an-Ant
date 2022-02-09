@@ -1,12 +1,10 @@
 /*-------------------------------- Constants --------------------------------*/
-
+const choices = ["sq0", "sq1", "sq2", "sq3" ,"sq4" ,"sq5"]
 const scores = []
 /*---------------------------- Variables (state) ----------------------------*/
-
+let playerChoice, comChoice, msg
 
 /*------------------------ Cached Element References ------------------------*/
-
-const playAgainButton = document.querySelector('#playAgainButton')
 /*playing Board
 message/game status*/
 
@@ -23,44 +21,66 @@ const scoreContainer= document.querySelector('#score')
 playAgainButton.addEventListener("click", () => {
 	console.log("pressed")
 })
-
+sq0.addEventListener("click", play)
+sq1.addEventListener("click", play)
+sq2.addEventListener("click", play)
+sq3.addEventListener("click", play)
+sq4.addEventListener("click", play)
+sq5.addEventListener("click", play)
 
 
 /*-------------------------------- Functions --------------------------------*/
 
+function getPlayerChoice(event) {
+  playerChoice = event.target.id
+}
 
+function getComputerChoice() {
+  const randomIndex = Math.floor(Math.random() * choices.length)
+  compChoice = choices[randomIndex]
+}
 
+	function compare() {
+		if (playerChoice == compChoice) {
+			msg = 'You guessed right!'
+		}else {
+			msg = 'Wrong guess!'
+		}
+	}
 
-sq0.addEventListener("click", addPoint0)
-sq1.addEventListener("click", addPoint0)
-sq2.addEventListener("click", addPoint0)
-sq3.addEventListener("click", addPoint0)
-sq4.addEventListener("click", addPoint0)
-sq5.addEventListener("click", addPoint0)
-
-
-function addPoint0(evt) {
+	function render() {
+		scoreContainer.innerText = `You chose ${playerChoice} and the computer chose ${compChoice}. ${msg}`
+	}
+	
+	function play(event) {
+		getPlayerChoice(event)
+		getComputerChoice()
+		compare()
+		render()
+	}
+	
+/*function addPoint0(evt) {
 	const isSquare = evt.target.id === "sq0"
 	const newScore = {
 		text: isSquare ? 'point scored' : 'no point scored'
 	}
 	scores.push(newScore)
 	render()
-}
+}*/
 
-
+/*
 function render() {
-	scoreContainer.innerHTML = ""
+	scoreContainer.innertext = `Score = ${addPoint0}`
   // quotes is an array of quote objects
-  scores.forEach((point, idx) => {
+  scores.forEach((point) => {
     // quote is an object with the shape of:
     // { artist: "artist name", text: "quote" }
-    appendScore(point, idx)
+    appendScore(point)
   }) 
 }
 
 
-function appendScore(point, idx) {
+function appendScore(point) {
 	let scoreCard = document.createElement("div")
 	scoreCard.innerHTML = 
 	`<div class="card-body">
@@ -71,8 +91,8 @@ function appendScore(point, idx) {
 		</footer>
 	</blockquote>
 	</div>`
-	scoreContainer.appendChild(scoreCard)
-}
+	scoreContainer.getAttribute(scoreCard);*/
+
 
 /*const scoreBoard = document.createElement("newScore");
 newScore = function(score) {
