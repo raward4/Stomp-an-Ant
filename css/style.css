@@ -23,7 +23,6 @@ section.board {
   grid-template-columns: repeat(3, 20vmin);
   grid-gap: 0vmin;
   text-align: center;
-  background-color: #002F00;
 }
 
 div {
@@ -51,11 +50,12 @@ body {
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   }
-
+sq0 {
+  background-color: red
+}
   
 h1 {
   border-style: dotted;
@@ -80,17 +80,4 @@ button {
   justify-items: auto;
 h4 {
   display: grid;
-}
-
-
-
-#light-dark-button {
-  background-color: var(--light-dark-btn-bg);
-  background-image: var(--light-dark-btn-bg);
-}
-
-#light-dark-button::after {
-  border: none;
-  color: var(--inverted-btn-text-color);
-  content: var(--light-dark-btn-content);
 }

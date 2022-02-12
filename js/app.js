@@ -40,12 +40,17 @@ function getComputerChoice() {
   compChoice = choices[randomIndex]
 }
 
-	function compare() {
+function compare() {
 		if (playerChoice == compChoice) {
 			msg = 'You guessed right!'
 		}else {
 			msg = 'Wrong guess!'
 		}
+	}
+
+	function displayCompChoice() {
+		if (compChoice === "sq0")
+		sq0.style.color = 'blue'
 	}
 
 	function render() {
@@ -57,6 +62,7 @@ function getComputerChoice() {
 		getComputerChoice()
 		compare()
 		render()
+		displayCompChoice()
 	}
 	
 /*function addPoint0(evt) {
