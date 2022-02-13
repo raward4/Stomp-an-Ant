@@ -10,9 +10,9 @@ body {
   min-height: 100vh;
 }
 
-.board
+.holes
 { 
-  position: abnsolute;
+  position: absolute;
   display:grid;
   grid-template-columns: repeat(4, 160px);
   gap: 10 px;
@@ -21,11 +21,20 @@ body {
   width: 670px;
   height: 630px;
   transform: translfate(-50%, -50%);
-  border: 1px solid black;
+  border: 2px solid black;
 }
-.board{
+.hole {
   position: relative;
   height: 150px;
-  height: 150px;
-  border: 1px solid black;
+  width: 160px;
+  border: 4px solid black;
+  overflow: hidden;
+}
+
+.pile {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  width: 210px;
+  object-fit: cover;
 }

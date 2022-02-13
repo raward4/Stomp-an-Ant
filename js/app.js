@@ -1,12 +1,30 @@
-/*-------------------------------- Constants --------------------------------*/
+
+const holesdiv = document.querySelector(".holes");
+
+for(let i=1; i<= 15; i++) {
+	let hole = document.createElement("div"); 
+	hole.classList.add("hole");
+	holesdiv.appendChild(hole);
+	let pile=document.createElement("img");
+	pile.classList.add("pile");
+	pile.src="./images/hill.png";
+	hole.appendChild(pile);
+}
+	
+	
+	
+	
+	
+	
+	/*------------------------------- Constants --------------------------------*
 const choices = ["sq0", "sq1", "sq2", "sq3" ,"sq4" ,"sq5"]
 const scores = []
-/*---------------------------- Variables (state) ----------------------------*/
+/*---------------------------- Variables (state) ----------------------------
 let playerChoice, comChoice, msg
 
-/*------------------------ Cached Element References ------------------------*/
+/*------------------------ Cached Element References ------------------------
 /*playing Board
-message/game status*/
+message/game status
 
 const sq0 = document.querySelector('#sq0')
 const sq1 = document.querySelector('#sq1')
@@ -18,7 +36,7 @@ const image = document.createElement('img')
 image.src = 'https://imgur.com/lGGPUp8'
 
 const scoreContainer= document.querySelector('#score')
-/*----------------------------- Event Listeners -----------------------------*/
+/*----------------------------- Event Listeners -----------------------------
 
 playAgainButton.addEventListener("click", () => {
 	console.log("pressed")
@@ -31,7 +49,7 @@ sq4.addEventListener("click", play)
 sq5.addEventListener("click", play)
 
 
-/*-------------------------------- Functions --------------------------------*/
+/*-------------------------------- Functions --------------------------------
 
 function getPlayerChoice(event) {
   playerChoice = event.target.id
@@ -66,7 +84,7 @@ function compare() {
 		render()
 		displayCompChoice()
 	}
-	
+	*/
 /*function addPoint0(evt) {
 	const isSquare = evt.target.id === "sq0"
 	const newScore = {
