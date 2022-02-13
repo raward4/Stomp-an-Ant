@@ -64,9 +64,42 @@ body {
   top: 5%;
   transform: translate(-5%, -5%);
   border: 1px solid white;
+
 }
 
 .scoretable div {
   display: flex;
   justify-content: space-between;
 }
+
+.model
+{
+  cursor: default;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: green;
+  pointer-events: all;
+  color: burlywood;
+  z-index: 1000;
+}
+.model button {
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+  color: green;
+  border: 1px solid silver;
+  cursor: pointer; 
+  transition: 0.8s;
+  font-family: 'Akaya Telivigala', cursive;
+}
+.model h2 {
+  visibility: hidden;
+} 
+
+.highscore {
+  margin-left: 10px;
+  }
