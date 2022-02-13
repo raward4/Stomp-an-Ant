@@ -15,7 +15,7 @@ const sq3 = document.querySelector('#sq3')
 const sq4 = document.querySelector('#sq4')
 const sq5 = document.querySelector('#sq5')
 const image = document.createElement('img')
-image.src = 
+image.src = 'https://imgur.com/lGGPUp8'
 
 const scoreContainer= document.querySelector('#score')
 /*----------------------------- Event Listeners -----------------------------*/
@@ -52,9 +52,8 @@ function compare() {
 
 	function displayCompChoice() {
 		if (compChoice === "sq0")
-		sq0.style.color = 'blue'
 		document.querySelector('#sq0').appendChild(image)
-	}
+	} 
 
 	function render() {
 		scoreContainer.innerText = `You chose ${playerChoice} and the computer chose ${compChoice}. ${msg}`
