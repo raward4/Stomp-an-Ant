@@ -28,6 +28,11 @@ for(let i=1; i<= 15; i++) {
 	redAnt.setAttribute("name","redAnt");
 	hole.appendChild(redAnt);
 }
+
+window.addEventListener("click", (e)=>{
+	if (e.target.name==="redAnt")
+	//console.log(traget)
+})
 	
 startbutton.addEventListener("click", () => {
 	 model.classList.add("modelclose")
@@ -46,10 +51,10 @@ startbutton.addEventListener("click", () => {
 		 const redAnt=document.querySelectorAll(".redAnt")
 		 let chooseAnt = Math.floor(Math.random() * redAnt.length);
 		 redAnt[chooseAnt].style.pointerEvents = "all";
-		 redAnt[chooseAnt].style.animation = "antup 2s ease";
+		 redAnt[chooseAnt].style.animation = "antup 1.7s ease";
 		 redAnt[chooseAnt].addEventListener("animationend", () => {
 			redAnt[chooseAnt].style.pointerEvents="all";
-			redAnt[chooseAnt].style.animation = "antdown 0.5s ease";
+			redAnt[chooseAnt].style.animation = "antdown 0.7s ease";
 			redAnt[chooseAnt].addEventListener("animationend", () => {
 				redAnt[chooseAnt].style.pointerEvents = "none";
 			});
