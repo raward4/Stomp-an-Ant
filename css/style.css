@@ -31,6 +31,7 @@ body {
   width: 160px;
   border: 1px dashed green;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .pile {
@@ -39,6 +40,7 @@ body {
   left: 20px;
   width: 210px;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .redAnt
@@ -49,7 +51,7 @@ body {
   width: 155px;
   object-fit: contain;
   pointer-events: all;
-  z-index: -1;
+  //z-index: -1;
   cursor: pointer;
 }
 

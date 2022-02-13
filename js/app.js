@@ -31,10 +31,13 @@ for(let i=1; i<= 15; i++) {
 
 window.addEventListener("click", (e)=>{
 	if (e.target.name==="redAnt")
-	//console.log(traget)
-})
-	
-startbutton.addEventListener("click", () => {
+	{
+		console.log(e.target);
+	}
+});
+
+
+startbutton.addEventListener("click", (e) => {
 	 model.classList.add("modelclose")
 	 timeRem=20
 	 pscore=0
