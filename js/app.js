@@ -38,9 +38,23 @@ startbutton.addEventListener("click", () => {
 
 	 let timer = setInterval(() => {
 		 time.textContent = timeRem;
+		 if (timeRem < 1){
+			 clearInterval(timer);
+		 } else { 
 		 timeRem--;
-		 time.textContent=timeRem < 10? "0" + timeRem : timeRem;
-		 
+		 time.textContent=timeRem < 10 ? "0" + timeRem : timeRem;
+		 const redAnt=document.querySelectorAll(".redAnt")
+		 let chooseAnt = Math.floor(Math.random() * redAnt.length);
+		 redAnt[chooseAnt].style.pointerEvents = "all";
+		 redAnt[chooseAnt].style.animation = "goUp 2s ease";
+		 redAnt[chooseAnt].addEventListener("animationend", () => {
+			redAnt[chooseAnt].style.pointerEvents="all";
+			redAnt[chooseAnt].style.animation = "goDown 0.5s ease";
+			redAnt[chooseAnt].addEventListener("animationend", () => {
+				redAnt[chooseAnt].style.pointerEvents = "none";
+			});
+		});
+		}
 	 }, 1000);
 	});
 	

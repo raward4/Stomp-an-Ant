@@ -49,6 +49,7 @@ body {
   object-fit: contain;
   pointer-events: all;
   z-index: -1;
+  visibility: hidden;
 }
 
 .scoretable{
@@ -115,4 +116,13 @@ body {
 .modelclose {
     opacity: 0;
     pointer-events: none;
+  }
+  @keyframes goUp {
+    from {
+      transform: translateY(140px);
+       }
+  
+    to {
+      transform: translateY(-130px);
+    }
   }
