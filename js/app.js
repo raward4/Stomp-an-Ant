@@ -6,6 +6,7 @@ const startbutton=document.querySelector(".model button");
 const highscore = document.querySelector(".highscore")
 const gameover=document.queryCommandIndeterm(".display h2");
 const shoe=document.querySelector(".shoe");
+const model = document.querySelector(".model")
 
 
 let timeRem;
@@ -28,8 +29,15 @@ for(let i=1; i<= 15; i++) {
 	hole.appendChild(redAnt);
 }
 	
-	
-	
+startbutton.addEventListener("click", () => {
+	 model.classList.add("modelclose")
+	 timeRem=20
+	 pscore=0
+	 score.textContent=pscore
+	 time.textContent=timeRem
+
+
+});
 	
 	
 	

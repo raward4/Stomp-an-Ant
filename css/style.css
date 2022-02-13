@@ -105,10 +105,14 @@ body {
   display: flex;
   flex-direction: column;
   }
-  .display {
+.display {
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
     align-items: center;
+  }
+.modelclose {
+    opacity: 0;
+    pointer-events: none;
   }
