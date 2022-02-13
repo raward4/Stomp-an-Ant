@@ -36,8 +36,14 @@ startbutton.addEventListener("click", () => {
 	 score.textContent=pscore
 	 time.textContent=timeRem
 
-
-});
+	 let timer = setInterval(() => {
+		 time.textContent = timeRem;
+		 timeRem--;
+		 time.textContent=timeRem < 10? "0" + timeRem : timeRem;
+		 
+	 }, 1000);
+	});
+	
 	
 	
 	
