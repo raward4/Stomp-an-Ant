@@ -46,18 +46,18 @@ startbutton.addEventListener("click", () => {
 		 const redAnt=document.querySelectorAll(".redAnt")
 		 let chooseAnt = Math.floor(Math.random() * redAnt.length);
 		 redAnt[chooseAnt].style.pointerEvents = "all";
-		 redAnt[chooseAnt].style.animation = "goUp 2s ease";
+		 redAnt[chooseAnt].style.animation = "antup 2s ease";
 		 redAnt[chooseAnt].addEventListener("animationend", () => {
 			redAnt[chooseAnt].style.pointerEvents="all";
-			redAnt[chooseAnt].style.animation = "goDown 0.5s ease";
+			redAnt[chooseAnt].style.animation = "antdown 0.5s ease";
 			redAnt[chooseAnt].addEventListener("animationend", () => {
 				redAnt[chooseAnt].style.pointerEvents = "none";
 			});
 		});
 		}
 	 }, 1000);
-	});
-	
+	})
+
 	
 	
 	

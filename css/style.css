@@ -44,12 +44,12 @@ body {
 .redAnt
 {
   position: absolute;
-  top: 0px;
+  top: 155px;
+  left: 0;
   width: 155px;
   object-fit: contain;
   pointer-events: all;
   z-index: -1;
-  visibility: hidden;
 }
 
 .scoretable{
@@ -117,12 +117,11 @@ body {
     opacity: 0;
     pointer-events: none;
   }
-  @keyframes goUp {
+  @keyframes antup {
     from {
-      transform: translateY(140px);
+      transform: translateY(100px);
        }
-  
     to {
-      transform: translateY(-130px);
+      transform: translateY(-150px);
     }
   }
