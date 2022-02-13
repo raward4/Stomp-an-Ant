@@ -1,5 +1,17 @@
 
 const holesdiv = document.querySelector(".holes");
+const score = document.querySelector(".score");
+const time = document.querySelector(".time");
+const startbutton=document.querySelector(".model button");
+const highscore = document.querySelector(".highscore")
+const gameover=document.queryCommandIndeterm(".display h2");
+const shoe=document.querySelector(".shoe");
+
+
+let timeRem;
+let pscore=0;
+let maxscore=0;
+
 
 for(let i=1; i<= 15; i++) {
 	let hole = document.createElement("div"); 
