@@ -9,6 +9,11 @@ for(let i=1; i<= 15; i++) {
 	pile.classList.add("pile");
 	pile.src="./images/hill.png";
 	hole.appendChild(pile);
+	let redAnt=document.createElement("img");
+	redAnt.classList.add("redAnt");
+	redAnt.src="./images/redAnt.png";
+	redAnt.setAttribute("name","redAnt");
+	hole.appendChild(redAnt);
 }
 	
 	

@@ -8,6 +8,8 @@
 body {
   font-family: 'Akaya Telivigala', cursive;
   min-height: 100vh;
+  background-color: burlywood;
+  text-align: center;
 }
 
 .holes
@@ -37,4 +39,34 @@ body {
   left: 20px;
   width: 210px;
   object-fit: cover;
+}
+
+.redAnt
+{
+  position: absolute;
+  top: 0px;
+  width: 155px;
+  object-fit: contain;
+  pointer-events: all;
+  z-index: -1;
+}
+
+.scoretable{
+
+  font-size: 1.5rem
+  height: 100px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  transform: translate(-5%, -5%);
+  border: 1px solid white;
+}
+
+.scoretable div {
+  display: flex;
+  justify-content: space-between;
 }
