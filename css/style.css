@@ -1,15 +1,19 @@
 
-{
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: grid;
+  position: absolute;
+  text-align: center;
 }
 
 body {
   font-family: 'Akaya Telivigala', cursive;
-  min-height: 100vh;
+  min-height: 300vh;
   background-color: burlywood;
   text-align: center;
+  display: grid;
 }
 
 .holes
@@ -114,18 +118,13 @@ body {
     flex-direction: column;
     justify-content: space-around; 
     align-items: center;
+    margin: 0;
+    padding: 0;
   }
 .modelclose {
     opacity: 0;
     pointer-events: none;
   }
-  .shoe {
-position: absolute;
-z-index: 1000
-height: 125px;
-top: 0;
-left: 0;
-transform: translate(10px, -40px);
   .flash {
     background: green;
   }
@@ -145,3 +144,19 @@ transform: translate(10px, -40px);
       transform: translateY(150px);
     }
   }
+  h1 {
+    text-align: center;
+    height: 100px;
+    justify-content: space-around; 
+    align-items: center;
+    border-style: dotted;
+    border: solid green;
+  }
+ h2 {
+    text-align: center;
+    height: 50px;
+    justify-content: space-around; 
+    align-items: center;
+    margin: 0;
+  }
+  

@@ -29,6 +29,11 @@ for(let i=1; i<= 15; i++) {
 	hole.appendChild(redAnt);
 }
 
+/*window.addEventListener("mousemove", (e) => {
+	shoe.style.left = e.pageX + "px";
+	shoe.style.top=(e.pageY - 60) +"px";
+});*/
+
 window.addEventListener("click", (e)=>{
 	if (e.target.name==="redAnt")
 	{
@@ -43,7 +48,7 @@ window.addEventListener("click", (e)=>{
 
 startbutton.addEventListener("click", () => {
 	 model.classList.add("modelclose");
-	 timeRem=4;
+	 timeRem=20;
 	 pscore=0;
 	 score.textContent= pscore
 	 time.textContent= timeRem
@@ -64,7 +69,7 @@ startbutton.addEventListener("click", () => {
 			 clearInterval(timer);
 		 } else { 
 		 timeRem--;
-		 time.textContent=timeRem < 10 ? "0" + timeRem : timeRem;
+		 time.textContent=timeRem < 20 ? "0" + timeRem : timeRem;
 		 const redAnt=document.querySelectorAll(".redAnt")
 		 let chooseAnt = Math.floor(Math.random() * redAnt.length);
 		 redAnt[chooseAnt].style.pointerEvents = "all";
