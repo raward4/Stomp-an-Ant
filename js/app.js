@@ -32,7 +32,12 @@ for(let i=1; i<= 15; i++) {
 window.addEventListener("click", (e)=>{
 	if (e.target.name==="redAnt")
 	{
-		console.log(e.target);
+	setTimeout(()=>{
+		document.body.classList.toggle("flash")
+	},100)
+		document.body.classList.toggle("flash");
+		pscore=pscore+1
+		score.textContent=pscore;
 	}
 });
 
