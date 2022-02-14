@@ -34,24 +34,33 @@ window.addEventListener("click", (e)=>{
 	{
 	setTimeout(()=>{
 		document.body.classList.toggle("flash")
-	},100)
+	},20)
 		document.body.classList.toggle("flash");
 		pscore=pscore+1
 		score.textContent=pscore;
 	}
 });
 
-
-startbutton.addEventListener("click", (e) => {
-	 model.classList.add("modelclose")
-	 timeRem=20
-	 pscore=0
-	 score.textContent=pscore
-	 time.textContent=timeRem
+startbutton.addEventListener("click", () => {
+	 model.classList.add("modelclose");
+	 timeRem=4;
+	 pscore=0;
+	 score.textContent= pscore
+	 time.textContent= timeRem
 
 	 let timer = setInterval(() => {
 		 time.textContent = timeRem;
-		 if (timeRem < 1){
+		 if (timeRem === 0){
+			 gameover.style.visibility="visible"
+			 model.classList.remove("modelclose")
+		 if(pscore>maxscore)
+			 {
+				 maxscore=pscore
+				 highscore.textContent = maxscore
+			 } else {
+				 highscore.textContent = maxscore
+			 }
+				
 			 clearInterval(timer);
 		 } else { 
 		 timeRem--;

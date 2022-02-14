@@ -68,7 +68,6 @@ body {
   top: 5%;
   transform: translate(-5%, -5%);
   border: 1px solid green;
-
 }
 
 .scoretable div {
@@ -119,6 +118,16 @@ body {
 .modelclose {
     opacity: 0;
     pointer-events: none;
+  }
+  .shoe {
+position: absolute;
+z-index: 1000
+height: 125px;
+top: 0;
+left: 0;
+transform: translate(10px, -40px);
+  .flash {
+    background: green;
   }
   @keyframes antup {
     from {
