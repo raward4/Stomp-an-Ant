@@ -1,14 +1,11 @@
 
 
-
 body {
   font-family: 'Akaya Telivigala', cursive;
   min-height: 300vh;
   background-color: burlywood;
   text-align: center;
-  display: grid;
-}
-
+  display: grid;}
 .holes { 
   position: absolute;
   display:grid;
