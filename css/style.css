@@ -1,12 +1,5 @@
 
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: grid;
-  position: absolute;
-  text-align: center;
-}
+
 
 body {
   font-family: 'Akaya Telivigala', cursive;
@@ -16,8 +9,7 @@ body {
   display: grid;
 }
 
-.holes
-{ 
+.holes { 
   position: absolute;
   display:grid;
   grid-template-columns: repeat(4, 160px);
@@ -159,4 +151,3 @@ body {
     align-items: center;
     margin: 0;
   }
-  
