@@ -56,7 +56,7 @@ startbutton.addEventListener("click", () => {
 	 let timer = setInterval(() => {
 		 time.textContent = timeRem;
 		 if (timeRem === 0){
-			 gameover.style.visibility="visible"
+			 gameover.style.visibility("visible")
 			 model.classList.remove("modelclose")
 		 if(pscore>maxscore)
 			 {

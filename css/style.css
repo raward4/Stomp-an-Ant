@@ -1,11 +1,17 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 body {
   font-family: 'Akaya Telivigala', cursive;
-  min-height: 300vh;
+  min-height: 100vh;
   background-color: burlywood;
-  text-align: center;
-  display: grid;}
+  overflow: hidden;
+}
+
 .holes { 
   position: absolute;
   display:grid;
@@ -16,13 +22,14 @@ body {
   width: 670px;
   height: 630px;
   transform: translfate(-50%, -50%);
-  border: 2px dotted green;
+  border: 2px solid green;
 }
+
 .hole {
   position: relative;
   height: 150px;
   width: 160px;
-  border: 1px dashed green;
+  border: 1px solid green;
   overflow: hidden;
   pointer-events: none;
 }
@@ -30,7 +37,7 @@ body {
 .pile {
   position: absolute;
   bottom: -20px;
-  left: 20px;
+  left: -20px;
   width: 210px;
   object-fit: cover;
   pointer-events: none;
@@ -44,20 +51,20 @@ body {
   width: 155px;
   object-fit: contain;
   pointer-events: all;
-  //z-index: -1;
+  z-index: -1;
   cursor: pointer;
 }
 
-.scoretable{
-
-  font-size: 1.5rem
+.scoretable {
+  font-size: 1.5rem;
   height: 100px;
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: red;
   position: absolute;
-  left: 10%;
+  left: 5%;
   top: 5%;
   transform: translate(-5%, -5%);
   border: 1px solid green;
@@ -83,6 +90,7 @@ body {
   color: burlywood;
   z-index: 1000;
 }
+
 .model button {
   padding: 1rem 4rem;
   font-size: 1.4rem;
@@ -92,6 +100,19 @@ body {
   transition: 0.8s;
   font-family: 'Akaya Telivigala', cursive;
 }
+
+.model button:hover {
+  background: lime;
+  color: black;
+}
+
+model h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
 .model h2 {
   visibility: hidden;
 } 
@@ -101,14 +122,13 @@ body {
   display: flex;
   flex-direction: column;
   }
+
 .display {
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
     align-items: center;
-    margin: 0;
-    padding: 0;
   }
 .modelclose {
     opacity: 0;
@@ -133,18 +153,4 @@ body {
       transform: translateY(150px);
     }
   }
-  h1 {
-    text-align: center;
-    height: 100px;
-    justify-content: space-around; 
-    align-items: center;
-    border-style: dotted;
-    border: solid green;
-  }
- h2 {
-    text-align: center;
-    height: 50px;
-    justify-content: space-around; 
-    align-items: center;
-    margin: 0;
-  }
+  
