@@ -48,7 +48,7 @@ window.addEventListener("click", (e)=>{
 
 startbutton.addEventListener("click", () => {
 	 model.classList.add("modelclose");
-	 timeRem=20;
+	 timeRem=10;
 	 pscore=0;
 	 score.textContent= pscore
 	 time.textContent= timeRem
@@ -56,8 +56,8 @@ startbutton.addEventListener("click", () => {
 	 let timer = setInterval(() => {
 		 time.textContent = timeRem;
 		 if (timeRem === 0){
-			 gameover.style.visibility("visible")
 			 model.classList.remove("modelclose")
+			 button.textContent = "Play again?"
 		 if(pscore>maxscore)
 			 {
 				 maxscore=pscore

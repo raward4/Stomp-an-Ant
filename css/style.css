@@ -1,18 +1,33 @@
-{
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
+  position: absolute;
+  text-align: center;
 }
-
-
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+box-sizing: inherit;
+}
+:root {
+  font-size: 92.5%
+}
 body {
   font-family: 'Akaya Telivigala', cursive;
   min-height: 100vh;
   background-color: burlywood;
-  overflow: hidden;
+  text-align: center;
+  display: flex;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: auto 1fr auto;
+  gap: 5px;
+  grid-template-rows: auto 1fr auto;
 }
 
-.holes { 
+.holes
+{ 
   position: absolute;
   display:grid;
   grid-template-columns: repeat(4, 160px);
@@ -22,14 +37,13 @@ body {
   width: 670px;
   height: 630px;
   transform: translfate(-50%, -50%);
-  border: 2px solid green;
+  border: 2px dotted green;
 }
-
 .hole {
   position: relative;
-  height: 150px;
-  width: 160px;
-  border: 1px solid green;
+  max-height: 200px;
+  max-width: 200vw;
+  border: 1px dashed green;
   overflow: hidden;
   pointer-events: none;
 }
@@ -37,7 +51,7 @@ body {
 .pile {
   position: absolute;
   bottom: -20px;
-  left: -20px;
+  left: 20px;
   width: 210px;
   object-fit: cover;
   pointer-events: none;
@@ -51,20 +65,21 @@ body {
   width: 155px;
   object-fit: contain;
   pointer-events: all;
-  z-index: -1;
+  //z-index: -1;
   cursor: pointer;
 }
 
-.scoretable {
-  font-size: 1.5rem;
-  height: 100px;
+.scoretable{
+
+  font-size: 1.5rem
+  height: 200px;
+  width: 100px;
   padding: 0.5rem 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  color: red;
-  position: absolute;
-  left: 5%;
+  position: relative;
+  left: 10%;
   top: 5%;
   transform: translate(-5%, -5%);
   border: 1px solid green;
@@ -72,7 +87,11 @@ body {
 
 .scoretable div {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+.score {
+  border:  solid green;
 }
 
 .model
@@ -90,7 +109,6 @@ body {
   color: burlywood;
   z-index: 1000;
 }
-
 .model button {
   padding: 1rem 4rem;
   font-size: 1.4rem;
@@ -100,19 +118,6 @@ body {
   transition: 0.8s;
   font-family: 'Akaya Telivigala', cursive;
 }
-
-.model button:hover {
-  background: lime;
-  color: black;
-}
-
-model h1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem;
-}
-
 .model h2 {
   visibility: hidden;
 } 
@@ -122,13 +127,15 @@ model h1 {
   display: flex;
   flex-direction: column;
   }
-
 .display {
+  position: relative;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
     align-items: center;
+    margin: 0;
+    padding: 0;
   }
 .modelclose {
     opacity: 0;
@@ -153,4 +160,39 @@ model h1 {
       transform: translateY(150px);
     }
   }
-  
+  .title {
+    text-align: center;
+    height: 100px;
+    justify-content: space-around; 
+    align-items: center;
+    border-style: dotted;
+    border: solid green;
+    display: flex;
+    with: 200px;
+  }
+ h2 {
+    text-align: center;
+    height: 50px;
+    justify-content: space-around; 
+    align-items: center;
+    margin: 0;
+    width: 200px;
+  }
+  .model {
+    grid-column: 1 / 4;
+    grid-column: span 3;
+  }
+  .holes {
+    grid-column: 2 / 3;
+  }
+  @media only screen and (min-width: 768px) {
+    body {
+      /* tablet - two column display */
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 50px auto 30px;
+      grid-template-areas: 
+        "header header"
+        "side content"
+        "footer footer";
+    }
+  }
