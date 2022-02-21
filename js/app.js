@@ -2,11 +2,11 @@
 const holesdiv = document.querySelector(".holes");
 const score = document.querySelector(".score");
 const time = document.querySelector(".time");
-const startbutton=document.querySelector(".model button");
+const startbutton=document.querySelector(".modal button");
 const highscore = document.querySelector(".highscore")
-const gameover=document.queryCommandIndeterm(".display h2");
+const gameover=document.querySelector(".display h2");
 const shoe=document.querySelector(".shoe");
-const model = document.querySelector(".model")
+const modal = document.querySelector(".modal");
 
 
 let timeRem;
@@ -29,10 +29,10 @@ for(let i=1; i<= 16; i++) {
 	hole.appendChild(redAnt);
 }
 
-/*window.addEventListener("mousemove", (e) => {
+window.addEventListener("mousemove", (e) => {
 	shoe.style.left = e.pageX + "px";
 	shoe.style.top=(e.pageY - 60) +"px";
-});*/
+});
 
 window.addEventListener("click", (e)=>{
 	if (e.target.name==="redAnt")
@@ -47,17 +47,18 @@ window.addEventListener("click", (e)=>{
 });
 
 startbutton.addEventListener("click", () => {
-	 model.classList.add("modelclose");
-	 timeRem=10;
+	 modal.classList.add("modalclose");
+	 timeRem=5;
 	 pscore=0;
 	 score.textContent= pscore
 	 time.textContent= timeRem
 
 	 let timer = setInterval(() => {
 		 time.textContent = timeRem;
-		 if (timeRem === 0){
-			 model.classList.remove("modelclose")
-			 button.textContent = "Play again?"
+		 if (timeRem === 0) {
+			 modal.classList.remove("modalclose");
+			 button.textContent = "Play again?";
+			 alert("Time is up! Great job, now try and beat your score!")
 		 if(pscore>maxscore)
 			 {
 				 maxscore=pscore
@@ -65,7 +66,6 @@ startbutton.addEventListener("click", () => {
 			 } else {
 				 highscore.textContent = maxscore
 			 }
-				
 			 clearInterval(timer);
 		 } else { 
 		 timeRem--;
