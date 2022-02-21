@@ -14,7 +14,7 @@ let pscore=0;
 let maxscore=0;
 
 
-for(let i=1; i<= 15; i++) {
+for(let i=1; i<= 16; i++) {
 	let hole = document.createElement("div"); 
 	hole.classList.add("hole");
 	holesdiv.appendChild(hole);
