@@ -14,7 +14,7 @@ let pscore=0;
 let maxscore=0;
 
 
-for(let i=1; i<= 16; i++) {
+for(let i=1; i<= 15; i++) {
 	let hole = document.createElement("div"); 
 	hole.classList.add("hole");
 	holesdiv.appendChild(hole);
@@ -48,7 +48,7 @@ window.addEventListener("click", (e)=>{
 
 startbutton.addEventListener("click", () => {
 	 modal.classList.add("modalclose");
-	 timeRem=5;
+	 timeRem=20;
 	 pscore=0;
 	 score.textContent= pscore
 	 time.textContent= timeRem
