@@ -1,12 +1,13 @@
 # Stomp-an-Ant
 Stomp-an-Ant:
-play the game here: https://scared-flower.surge.sh
+
+Play the game here:  hospitable-growth.surge.sh
 
 SEI Course Unit 1 Project - Browser-based Game
 
 Screenshot:
-![My Image](images/whacshot.png)
-![My Image](images/whacshot2.png)
+![My Image](images/whac an ant screenshot.png)
+![My Image](images/whac an ant screenshot modal.png)
 
 History:
 This game is based on the arcade classic 'Whac-a-mole'. Originally named "Mole Buster" in Japan during the late '70s, this game gained popularity at carinvals in the West by 1980. Why moles? Idk. 
