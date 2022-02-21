@@ -1,103 +1,93 @@
 html {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  display: flex;
-  position: absolute;
-  text-align: center;
 }
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
 *::after { /* All ::after pseudo-elements */
   /* height & width will now include border & padding by default
      but can be over-ridden as needed */
-box-sizing: inherit;
+  box-sizing: inherit;
 }
+
+/* resets font size to be 62.5% of the user preference - 
+   in most browser configurations this will be 10px */
 :root {
-  font-size: 92.5%
+  font-size: 62.5%;
+  --cursive: 'Dancing Script', cursive;
+  --serif: 'Playfair Display', serif;
 }
+
 body {
-  font-family: 'Akaya Telivigala', cursive;
-  min-height: 100vh;
   background-color: burlywood;
-  text-align: center;
   display: flex;
-  grid-template-columns: 20% 40% 40%;
-  grid-template-rows: auto 1fr auto;
-  gap: 5px;
-  grid-template-rows: auto 1fr auto;
+  flex-direction: column;
+  padding: 0;
+  margin: auto;
+}
+
+#title {
+  position: absolute;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  width: 70vh;
+  font-size: 5.8rem;
+  font-weight: 700;
+  margin: auto;
+  border: solid green;
 }
 
 .holes
 { 
   position: absolute;
-  display:grid;
+  justify-content: center;
+  display: grid;
   grid-template-columns: repeat(4, 160px);
-  gap: 10 px;
-  top: 50%;
+  gap: 0px;
+  top: 30%;
   left: 50%;
-  width: 670px;
-  height: 630px;
-  transform: translfate(-50%, -50%);
-  border: 2px dotted green;
+  right: 50%;
+  height: 50%;
+  transform: translate(-30%, -50%);
+  margin: auto;
+  width: auto;
 }
 .hole {
   position: relative;
-  max-height: 200px;
+  max-height: 200vh;
   max-width: 200vw;
-  border: 1px dashed green;
   overflow: hidden;
   pointer-events: none;
 }
 
 .pile {
   position: absolute;
-  bottom: -20px;
-  left: 20px;
-  width: 210px;
-  object-fit: cover;
+  bottom: 10px;
+  left: 10px;
+  width: 150px;
+  height: 50px;
+  object-fit: fill;
   pointer-events: none;
 }
 
 .redAnt
 {
   position: absolute;
-  top: 155px;
+  top: 120px;
   left: 0;
   width: 155px;
   object-fit: contain;
   pointer-events: all;
-  //z-index: -1;
   cursor: pointer;
-}
-
-.scoretable{
-
-  font-size: 1.5rem
-  height: 200px;
-  width: 100px;
-  padding: 0.5rem 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: relative;
-  left: 10%;
-  top: 5%;
-  transform: translate(-5%, -5%);
-  border: 1px solid green;
-}
-
-.scoretable div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.score {
-  border:  solid green;
 }
 
 .model
 {
   cursor: default;
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -106,8 +96,7 @@ body {
   align-items: center;
   background: green;
   pointer-events: all;
-  color: burlywood;
-  z-index: 1000;
+  color: white;
 }
 .model button {
   padding: 1rem 4rem;
@@ -116,16 +105,24 @@ body {
   border: 1px solid silver;
   cursor: pointer; 
   transition: 0.8s;
-  font-family: 'Akaya Telivigala', cursive;
 }
 .model h2 {
   visibility: hidden;
+    position: absolute;
+     text-align: center;
+     height: 50px;
+     justify-content: space-around; 
+     align-items: center;
+     margin: 0;
+     width: 200px;
 } 
 
 .highscore {
-  margin-left: 10px;
+  justify-content: center;
+  margin-left: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  color: red;
   }
 .display {
   position: relative;
@@ -160,31 +157,7 @@ body {
       transform: translateY(150px);
     }
   }
-  .title {
-    text-align: center;
-    height: 100px;
-    justify-content: space-around; 
-    align-items: center;
-    border-style: dotted;
-    border: solid green;
-    display: flex;
-    with: 200px;
-  }
- h2 {
-    text-align: center;
-    height: 50px;
-    justify-content: space-around; 
-    align-items: center;
-    margin: 0;
-    width: 200px;
-  }
-  .model {
-    grid-column: 1 / 4;
-    grid-column: span 3;
-  }
-  .holes {
-    grid-column: 2 / 3;
-  }
+
   @media only screen and (min-width: 768px) {
     body {
       /* tablet - two column display */
@@ -195,4 +168,26 @@ body {
         "side content"
         "footer footer";
     }
+  }
+
+  .score-table div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid green;
+    padding: 3px;
+    margin: auto;
+    font-size: 120%;
+    border-radius: 20pc;
+    border-width: 0.2em;
+  }
+
+  .score {
+    color: green;
+    font-weight: bold;
+  }
+
+  .time {
+    color: red;
+    font-weight: bold;
   }
