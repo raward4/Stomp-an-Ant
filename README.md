@@ -6,8 +6,8 @@ Play the game here:  hospitable-growth.surge.sh
 SEI Course Unit 1 Project - Browser-based Game
 
 Screenshot:
-![My Image](images/whac an ant screenshot.png)
-![My Image](images/whac an ant screenshot modal.png)
+![My Image] https://www.dropbox.com/s/wfkop2rbxhkscc0/whacshot2.png?dl=0
+![My Image ]https://www.dropbox.com/s/m0sh425dui4p72w/whacshot.png?dl=0
 
 History:
 This game is based on the arcade classic 'Whac-a-mole'. Originally named "Mole Buster" in Japan during the late '70s, this game gained popularity at carinvals in the West by 1980. Why moles? Idk. 
