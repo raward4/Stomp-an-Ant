@@ -65,8 +65,8 @@ body {
   left: 50%;
   right: 50%;
   height: 80%;
-  transform: translate(-30%, -90%);
-  margin: 1px 20% 1px 20%;
+  transform: translate(-30%, -50%);
+  margin: auto;
   width: auto;
 }
 .hole {
@@ -111,6 +111,8 @@ body {
   background: green;
   pointer-events: all;
   color: white;
+  margin: auto;
+  width: auto;
 }
 .modal button {
   padding: 1rem 4rem;
