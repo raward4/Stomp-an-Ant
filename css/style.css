@@ -28,7 +28,7 @@ body {
 }
 
 #title {
-  position: absolute;
+  position: relative;
   background-color: blue;
   display: flex;
   flex-direction: column;
@@ -46,18 +46,18 @@ body {
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(4, 160px);
-  gap: 0px;
-  top: 30%;
+  gap: 13px;
+  top: 99%;
   left: 50%;
   right: 50%;
-  height: 50%;
+  height: 80%;
   transform: translate(-30%, -50%);
   margin: auto;
   width: auto;
 }
 .hole {
   position: relative;
-  max-height: 200vh;
+  max-height: 300vh;
   max-width: 200vw;
   overflow: hidden;
   pointer-events: none;
@@ -68,7 +68,7 @@ body {
   bottom: 10px;
   left: 10px;
   width: 150px;
-  height: 50px;
+  height: 23px;
   object-fit: fill;
   pointer-events: none;
 }
@@ -76,10 +76,10 @@ body {
 .redAnt
 {
   position: absolute;
-  top: 120px;
+  top: 90%;
   left: 0;
-  width: 155px;
-  object-fit: contain;
+  width: 120px;
+  object-fit: fill;
   pointer-events: all;
   cursor: pointer;
 }
@@ -107,7 +107,7 @@ body {
   transition: 0.8s;
 }
 .model h2 {
-  visibility: hidden;
+    visibility: hidden;
     position: absolute;
      text-align: center;
      height: 50px;
@@ -143,10 +143,10 @@ body {
   }
   @keyframes antup {
     from {
-      transform: translateY(100px);
+      transform: translateY(20px);
        }
     to {
-      transform: translateY(-150px);
+      transform: translateY(-100px);
     }
   }
   @keyframes antdown {
@@ -171,15 +171,17 @@ body {
   }
 
   .score-table div {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border: solid green;
-    padding: 3px;
-    margin: auto;
+    padding: 4px;
+    margin: 4px;
+    width: auto;
     font-size: 120%;
     border-radius: 20pc;
-    border-width: 0.2em;
+    border-width: 0.25em;
   }
 
   .score {
