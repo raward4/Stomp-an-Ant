@@ -1,4 +1,4 @@
-
+/*-------------------------------- Constants --------------------------------*/
 const holesdiv = document.querySelector(".holes");
 const score = document.querySelector(".score");
 const time = document.querySelector(".time");
@@ -9,11 +9,12 @@ const shoe=document.querySelector(".shoe");
 const modal = document.querySelector(".modal");
 
 
+/*---------------------------- Variables (state) ----------------------------*/
 let timeRem;
 let pscore=0;
 let maxscore=0;
 
-
+/*--------------Cached Element References / Event Listeners / Functions-----------*/
 for(let i=1; i<= 15; i++) {
 	let hole = document.createElement("div"); 
 	hole.classList.add("hole");

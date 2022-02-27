@@ -3,8 +3,8 @@
 ## Play the game here:  https://frightening-cap.surge.sh
 
 ## Screenshot:
-<ul> ![My Image] https://www.dropbox.com/s/wfkop2rbxhkscc0/whacshot2.png?dl=0
-<ul> ![My Image ]https://www.dropbox.com/s/m0sh425dui4p72w/whacshot.png?dl=0
+<li> ![My Image] https://www.dropbox.com/s/wfkop2rbxhkscc0/whacshot2.png?dl=0
+<li> ![My Image ]https://www.dropbox.com/s/m0sh425dui4p72w/whacshot.png?dl=0
 
 ## History:
 This game is based on the arcade classic 'Whac-a-mole'. Originally named "Mole Buster" in Japan during the late '70s, this game gained popularity at carinvals in the West by 1980. Why moles? Idk. 
@@ -15,8 +15,9 @@ Stop the ants from ruining your picnic by...
 2. Whacking as many ants as you can before the timer ends by clicking on the image before it disappears.
 3. Playing again - try and beat your score!
    
-## Link below displays original mark-ups for project and initial project creation ideas. 
-trello link: https://trello.com/b/eJg1NN9Z/whac-a-mole-game-unit-1-project
+## Trello Link
+<li> https://trello.com/b/eJg1NN9Z/whac-a-mole-game-unit-1-project
+<li> displays original mark-ups for project and initial project creation ideas
 
 ## Technology Implemented:
 
