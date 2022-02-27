@@ -1,7 +1,7 @@
 # Stomp-an-Ant
 Stomp-an-Ant:
 
-Play the game here:  hospitable-growth.surge.sh
+Play the game here:  frightening-cap.surge.sh
 
 SEI Course Unit 1 Project - Browser-based Game
 
