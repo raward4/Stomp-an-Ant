@@ -32,8 +32,8 @@ MDN - constructing functions properly
 Youtube - CSS formatting assistance
 
 ## Improvements: 
--upload any image for user to 'whack'. 
--sounds, animations
+ <li> upload any image for user to 'whack'. 
+ <li> sounds, animations
 
 ## User Experience: 
 The idea is to create a fun game where you "stomp ants" using quick response time and mouse manipulation. Your score reflects your ability level! The hope is to allow users to upload any image they wish onto this page and the game allows the user to "whack!" any image they wish. The game is targeted towards users with phones or laptops who are looking to healthily relieve stress during their regular day with a fun game. 
