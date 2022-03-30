@@ -15,9 +15,7 @@ Stop the ants from ruining your picnic by...
 2. Whacking as many ants as you can before the timer ends by clicking on the image before it disappears.
 3. Playing again - try and beat your score!
    
-## Trello Link
-[Click here to see original mock-ups] (https://trello.com/b/eJg1NN9Z/whac-a-mole-game-unit-1-project)
-<li> displays original mark-ups for project and initial project creation ideas
+## [Trello Link (original planning](https://trello.com/b/eJg1NN9Z/whac-a-mole-game-unit-1-project)
 
 ## Technology Implemented:
 
