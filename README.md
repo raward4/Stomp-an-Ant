@@ -1,6 +1,6 @@
 # Stomp-an-Ant
-
-## Play the game here:  https://frightening-cap.surge.sh
+ 
+## [Play the game here!](https://frightening-cap.surge.sh)
 
 ## Screenshot:
 ![My Image](images/modalANT.png)
