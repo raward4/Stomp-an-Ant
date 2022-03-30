@@ -3,7 +3,7 @@
 ## Play the game here:  https://frightening-cap.surge.sh
 
 ## Screenshot:
-<li> ![My Image] https://www.dropbox.com/s/wfkop2rbxhkscc0/whacshot2.png?dl=0
+<li> ![My Image] (images/scshtANT.png)
 <li> ![My Image ]https://www.dropbox.com/s/m0sh425dui4p72w/whacshot.png?dl=0
 
 ## History:

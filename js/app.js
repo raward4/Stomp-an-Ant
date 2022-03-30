@@ -74,10 +74,10 @@ startbutton.addEventListener("click", () => {
 		 const redAnt=document.querySelectorAll(".redAnt")
 		 let chooseAnt = Math.floor(Math.random() * redAnt.length);
 		 redAnt[chooseAnt].style.pointerEvents = "all";
-		 redAnt[chooseAnt].style.animation = "antup 1.7s ease";
+		 redAnt[chooseAnt].style.animation = "antup 3.7s ease";
 		 redAnt[chooseAnt].addEventListener("animationend", () => {
 			redAnt[chooseAnt].style.pointerEvents="all";
-			redAnt[chooseAnt].style.animation = "antdown 0.7s ease";
+			redAnt[chooseAnt].style.animation = "antdown 1.7s ease";
 			redAnt[chooseAnt].addEventListener("animationend", () => {
 				redAnt[chooseAnt].style.pointerEvents = "none";
 			});
