@@ -3,8 +3,8 @@
 ## Play the game here:  https://frightening-cap.surge.sh
 
 ## Screenshot:
-<li> ![My Image] (https://previews.dropbox.com/p/thumb/ABeBJn-pvkpfsEKyBFOOZK1OpM5aCW2jIt9sIjnIvUF2ySS6FHwnv0QknbVTfbVCtYuPrCSUksCusieFznEDHKzI10lC8JAqkJH9BrgqHdcbAOvsj5i2Ys70aNlcpyogPGsGY_KHW-rIVOqHUN1L9a4fPE7LuxR_Gkb5cgFfhP2u_d7NrguwXjwL6bDsOSgJqD9H4pVZ-hxmUDy9uEVOZ-din9nxaLEiNAkbHStbb-U_dnqY4L27BRtDxq3lU7MHGxb2boshnxJrX1LNLorDiUsQ5FmcCrQtUXWC0eaXh96v8B87I8oRSUu2yhGn0LxkR0_85l9u38XzB4BIBnFZcb1euDsmEziF8-3gQG0bAj4o67Hrhk_LVEhhDvp0V23coO0/p.png)
-<li> ![My Image ](images/scshtANT.png)
+![My Image] (https://previews.dropbox.com/p/thumb/ABeBJn-pvkpfsEKyBFOOZK1OpM5aCW2jIt9sIjnIvUF2ySS6FHwnv0QknbVTfbVCtYuPrCSUksCusieFznEDHKzI10lC8JAqkJH9BrgqHdcbAOvsj5i2Ys70aNlcpyogPGsGY_KHW-rIVOqHUN1L9a4fPE7LuxR_Gkb5cgFfhP2u_d7NrguwXjwL6bDsOSgJqD9H4pVZ-hxmUDy9uEVOZ-din9nxaLEiNAkbHStbb-U_dnqY4L27BRtDxq3lU7MHGxb2boshnxJrX1LNLorDiUsQ5FmcCrQtUXWC0eaXh96v8B87I8oRSUu2yhGn0LxkR0_85l9u38XzB4BIBnFZcb1euDsmEziF8-3gQG0bAj4o67Hrhk_LVEhhDvp0V23coO0/p.png)
+![My Image ](images/scshtANT.png)
 (https://www.dropbox.com/s/m0sh425dui4p72w/whacshot.png?dl=0)
 
 ## History:
