@@ -16,7 +16,7 @@ Stop the ants from ruining your picnic by...
 3. Playing again - try and beat your score!
    
 ## Trello Link
-<li> https://trello.com/b/eJg1NN9Z/whac-a-mole-game-unit-1-project
+[Click here to see original mock-ups] (https://trello.com/b/eJg1NN9Z/whac-a-mole-game-unit-1-project)
 <li> displays original mark-ups for project and initial project creation ideas
 
 ## Technology Implemented:
